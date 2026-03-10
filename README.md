@@ -67,13 +67,13 @@ docker run -p 9009:9009 \
 
 ## Amber Scenario
 
-This agent includes an [Amber](https://github.com/RDI-Foundation/amber) manifest at [`amber/amber-manifest.json5`](amber/amber-manifest.json5) for use in the AgentBeats quick-submit flow.
+This agent includes an [Amber](https://github.com/RDI-Foundation/amber) manifest at [`amber-manifest.json5`](amber-manifest.json5) for use in the AgentBeats quick-submit flow.
 
 ### Validate the manifest
 
 ```bash
 docker run --rm -v "$PWD":/work -w /work \
-  ghcr.io/rdi-foundation/amber-cli:main check amber/amber-manifest.json5
+  ghcr.io/rdi-foundation/amber-cli:main check amber-manifest.json5
 ```
 
 ### Run as part of a scenario
